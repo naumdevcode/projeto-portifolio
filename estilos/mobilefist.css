@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 10vh;
+    background-color: blue;
+}
+
+main{
+    display: grid;
+    grid-template: repeat(2, 300px) / 20px 1fr 20px;
+}
+
+.ficha{
+    background-color: red;
+    grid-area: 1 / 2;
+}
+
+.detalhe{
+    background-color: rgb(102, 1, 1);
+    grid-area: 2 / 2;
+}
+
+footer{
+    height: 10vh;
+    background-color: rgb(1, 1, 101);
+}
+

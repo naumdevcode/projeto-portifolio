@@ -1,0 +1,11 @@
+main{
+    grid-template: 600px / 20px 1fr 2fr 20px;
+}
+
+.ficha{
+    grid-area: 1 / 2;
+}
+
+.detalhe{
+    grid-area: 1 / 3;
+}
