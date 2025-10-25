@@ -9,3 +9,7 @@ main{
 #detalhes{
     grid-area: 1 / 3;
 }
+
+#skill-container{
+    grid-template-columns: 1fr 1fr;
+}
