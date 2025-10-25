@@ -7,11 +7,11 @@
 }
 
 :root{
-    --fundo-principal: #f5f5f5;
+    --fundo-principal: #d3d3d3;
     --texto: #222222;
     --texto-inverso: #ffffff;
-    --destaque: #F15A38;
-    --destaque-inverso: #f1a138;
+    --destaque: #000AFF;
+    --destaque-inverso: hsl(203, 100%, 60%);
     --fundo-card: #ffffff;
 }
 
@@ -52,23 +52,53 @@ header{
     color: var(--destaque);
 }
 
-/* main{
+main{
     display: grid;
-    grid-template: repeat(2, 300px) / 20px 1fr 20px;
+    grid-template: 1fr / 1fr 90vw 1fr;
+    margin-top: 20px;
+    gap: 20px;
 }
 
-.ficha{
-    background-color: red;
+#ficha{
+    background-color: var(--fundo-card);
+    padding: 20px;
+    border-radius: 10px;
     grid-area: 1 / 2;
 }
 
-.detalhe{
-    background-color: rgb(102, 1, 1);
-    grid-area: 2 / 2;
+.foto{
+    width: 200px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px solid var(--fundo-card);
+    outline: 5px solid var(--destaque);
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
 }
 
-footer{
-    height: 10vh;
-    background-color: rgb(1, 1, 101);
-} */
+#ficha h1{
+    color: var(--destaque);
+    font-size: 1.5em;
+    margin: 15px 0px;
+}
 
+#social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-top: 15px;
+}
+
+#social a{
+    font-size: 1.5em;
+    color: var(--destaque);
+    transition: color .5s;
+}
+
+#social a:hover{
+    color: var(--destaque-inverso);
+}
