@@ -54,16 +54,19 @@ header{
 
 main{
     display: grid;
-    grid-template: 1fr / 1fr 90vw 1fr;
+    grid-template: 1fr 1fr / 1fr 90vw 1fr;
     margin-top: 20px;
     gap: 20px;
 }
 
-#ficha{
+#ficha, article{
     background-color: var(--fundo-card);
     padding: 20px;
     border-radius: 10px;
-    grid-area: 1 / 2;
+}
+
+#ficha{
+     grid-column: 2;
 }
 
 .foto{
@@ -101,4 +104,21 @@ main{
 
 #social a:hover{
     color: var(--destaque-inverso);
+}
+
+#detalhes{
+    grid-column: 2;
+}
+
+article{
+    margin-bottom: 15px;
+}
+
+article i{
+    margin-right: .5em;
+}
+
+article h2{
+    color: var(--destaque);
+    margin-bottom: 10px;
 }

@@ -1,11 +1,11 @@
 main{
-    grid-template: 600px / 20px 1fr 2fr 20px;
+    grid-template: 90vh / 20px 1fr 2fr 20px;
 }
 
-.ficha{
+#ficha{
     grid-area: 1 / 2;
 }
 
-.detalhe{
+#detalhes{
     grid-area: 1 / 3;
 }
