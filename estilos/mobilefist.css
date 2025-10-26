@@ -7,11 +7,11 @@
 }
 
 :root{
-    --fundo-principal: #d3d3d3;
+    --fundo-principal: #d4d4d4;
     --texto: #222222;
     --texto-inverso: #ffffff;
     --destaque: #000AFF;
-    --destaque-inverso: hsl(203, 100%, 60%);
+    --destaque-inverso: #33b1ff;
     --fundo-card: #ffffff;
 }
 
@@ -120,7 +120,7 @@ article i{
 
 article h2{
     color: var(--destaque);
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 #skill-container{
@@ -157,4 +157,34 @@ article h2{
     background-color: var(--destaque-inverso);
     height: 100%;
     border-radius: 4px;
+}
+
+#formacao-container{
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    gap: 20px;
+}
+
+#formacao-container .curso{
+    background-color: var(--fundo-principal);
+    border-radius: 10px;
+    padding-left: 15px;
+    border-left: 5px solid var(--destaque-inverso);
+    transition: border .5s;
+}
+
+#formacao-container .curso:hover{
+    border-left: 15px solid var(--destaque);
+    cursor: pointer;
+}
+
+#formacao-container .periodo{
+    font-size: 0.9em;
+    font-weight: bold;
+    color: var(--texto);
+}
+
+#formacao-container .instituicao{
+    font-size: 1.1em;
+    color: var(--destaque-inverso);
 }
