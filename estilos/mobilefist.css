@@ -29,6 +29,8 @@ header{
     justify-content: flex-end;
     align-items: center;
     padding: 10px;
+    position: sticky;
+    top: 0;
 }
 
 #menu ul{
@@ -69,7 +71,7 @@ main{
      grid-column: 2;
 }
 
-.foto{
+#ficha .foto{
     width: 200px;
     aspect-ratio: 1/1;
     object-fit: cover;
@@ -88,7 +90,7 @@ main{
     margin: 15px 0px;
 }
 
-#social{
+#ficha #social{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,13 +98,13 @@ main{
     margin-top: 15px;
 }
 
-#social a{
+#ficha #social a{
     font-size: 1.5em;
     color: var(--destaque);
     transition: color .5s;
 }
 
-#social a:hover{
+#ficha #social a:hover{
     color: var(--destaque-inverso);
 }
 
@@ -110,15 +112,15 @@ main{
     grid-column: 2;
 }
 
-article{
+#detalhes article{
     margin-bottom: 15px;
 }
 
-article i{
+#detalhes article i{
     margin-right: .5em;
 }
 
-article h2{
+#detalhes article h2{
     color: var(--destaque);
     margin-bottom: 20px;
 }
@@ -186,5 +188,53 @@ article h2{
 
 #formacao-container .instituicao{
     font-size: 1.1em;
+    color: var(--destaque-inverso);
+}
+
+#projeto-container{
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    gap: 20px;
+}
+
+#projeto-container .projeto{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 15px;
+    background-color: var(--fundo-principal);
+    padding: 10px;
+    border-radius: 10px;
+    border-left: 5px solid var(--destaque-inverso);
+    transition: border .5s;
+}
+
+#projeto-container .projeto:hover{
+    border-left: 15px solid var(--destaque);
+    cursor: pointer;
+}
+
+#projeto-container .foto{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: top;
+    overflow: hidden;
+    border-radius: 10px ;
+}
+
+footer{
+    background-color: var(--destaque);
+    color: var(--texto-inverso);
+    padding: 15px;
+    text-align: center;
+}
+
+footer a{
+    color: var(--texto-inverso);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover{
     color: var(--destaque-inverso);
 }
