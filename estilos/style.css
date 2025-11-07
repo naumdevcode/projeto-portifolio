@@ -1,9 +1,12 @@
 main{
-    grid-template: 90vh / 20px 1fr 2fr 20px;
+    grid-template: auto / Auto 300px 1fr Auto;
 }
 
 #ficha{
     grid-area: 1 / 2;
+    height: fit-content;
+    position: sticky;
+    top: 65px;
 }
 
 #detalhes{
